@@ -1,0 +1,48 @@
+/* style.css */
+
+/* Basic layout wireframe - no aesthetic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+section {
+  border: 1px dashed #bbb;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 40px;
+}
