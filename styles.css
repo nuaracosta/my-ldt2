@@ -8,6 +8,7 @@
 }
 
 body {
+  background-color: #d8a790;
   font-family: sans-serif;
   line-height: 1.6;
   max-width: 900px;
@@ -25,8 +26,30 @@ nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 15px; /* Adjust distance between buttons */
   margin-top: 15px;
+  padding: 0; /* Remove default browser ul padding */
+  justify-content: center; /* Centers the row of buttons horizontally */
+}
+
+nav ul li a {
+  display: inline-block;
+  background-color: #9b4922; /* Rust brown background */
+  color: #FFFFFF; /* White text */
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-family: sans-serif;
+  font-size: 14px;
+  
+  /* Pill shape */
+  border-radius: 9999px;
+  
+  /* Size & Alignment */
+  padding: 12px 28px;
+  min-width: 140px; /* Optional: gives buttons a consistent width */
+  text-align: center;
+
 }
 
 section {
@@ -35,6 +58,34 @@ section {
   margin-bottom: 25px;
   border-radius: 4px;
 }
+
+.left-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Keeps text and buttons aligned nicely */
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #FFFFFF;
+  letter-spacing: 6px;
+  margin: 0 0 25px 0;
+}
+
 
 h2 {
   margin-bottom: 10px;
